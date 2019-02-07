@@ -1,7 +1,9 @@
 package org.itstep;
 
-public class Thread1 extends AbstractThread {
-    public Thread1(int v) {
-        super(v);
+@Delay(3000)
+public class Thread1 extends Thread {
+    @Override
+    public void run() {
+        System.out.println("Thread1");
     }
 }

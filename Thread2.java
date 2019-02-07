@@ -1,10 +1,9 @@
 package org.itstep;
 
-public class Thread2 extends SomeClass implements Runnable {
+@Delay(10000)
+public class Thread2 extends Thread {
     @Override
     public void run() {
-        while (true) {
-            System.out.println("!");
-        }
+        System.out.println("Thread2");
     }
 }
